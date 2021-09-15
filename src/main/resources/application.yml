@@ -11,6 +11,6 @@ spring:
   sql:
     init:
       mode: always
-      schema-locations: classpath*:database/initDB.sql
+      schema-locations: classpath*:database/01 initDB.sql
 #     TODO:  хэй хэй, закомменти data-locations при повторном запуске, иначе не позволит наполнить данными
-      data-locations: classpath*:database/populateDB.sql
+      data-locations: classpath*:database/02 populateDB.sql
