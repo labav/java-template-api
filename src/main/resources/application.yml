@@ -1,0 +1,16 @@
+spring.datasource.url: jdbc:postgresql://localhost:5432/postgres
+# TODO: докинуть шифрование пароля
+spring.datasource.username: postgres
+spring.datasource.password:
+
+spring.datasource.driver-class-name: org.postgresql.Driver
+spring.jpa.database: postgresql
+spring.jpa.database-platform: org.hibernate.dialect.PostgreSQLDialect
+
+spring:
+  sql:
+    init:
+      mode: always
+      schema-locations: classpath*:database/initDB.sql
+#     TODO:  хэй хэй, закомменти data-locations при повторном запуске, иначе не позволит наполнить данными
+      data-locations: classpath*:database/populateDB.sql
