@@ -1,0 +1,12 @@
+version: "3"
+services:
+  # APP*****************************************
+  java-template-api:
+    image: java-template-api:latest
+    network_mode: bridge
+    container_name: java-template-api
+    expose:
+      - 8080
+    ports:
+      - 8080:8080
+    restart: unless-stopped
