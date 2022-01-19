@@ -1,0 +1,6 @@
+# TODO: rename it like application-test.yml
+
+spring:
+  sql:
+    init:
+      mode: never
